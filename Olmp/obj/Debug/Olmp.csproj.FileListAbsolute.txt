@@ -1,0 +1,11 @@
+D:\Olmp\Olmp\obj\Debug\Olmp.csproj.AssemblyReference.cache
+D:\Olmp\Olmp\obj\Debug\Olmp.csproj.SuggestedBindingRedirects.cache
+D:\Olmp\Olmp\obj\Debug\Olmp.Form1.resources
+D:\Olmp\Olmp\obj\Debug\Olmp.csproj.GenerateResource.cache
+D:\Olmp\Olmp\bin\Debug\Olmp.exe.config
+D:\Olmp\Olmp\bin\Debug\Olmp.exe
+D:\Olmp\Olmp\bin\Debug\Olmp.pdb
+D:\Olmp\Olmp\obj\Debug\Olmp.Properties.Resources.resources
+D:\Olmp\Olmp\obj\Debug\Olmp.csproj.CoreCompileInputs.cache
+D:\Olmp\Olmp\obj\Debug\Olmp.exe
+D:\Olmp\Olmp\obj\Debug\Olmp.pdb
