@@ -31,6 +31,7 @@ namespace Olmp.Forms
             NpgsqlDataReader npgSqlDataReader = npgSqlCommand.ExecuteReader();
             if (!npgSqlDataReader.HasRows)
                 checkEmail = true;
+            npgSqlConnection.Close();
 
         }
 
