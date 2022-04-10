@@ -1,16 +1,16 @@
 ﻿namespace Olmp
 {
-    partial class Main
+    partial class Account
     {
         /// <summary>
-        /// Обязательная переменная конструктора.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Освободить все используемые ресурсы.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,21 +20,32 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            this.panellLogo = new System.Windows.Forms.Panel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btn_signup = new System.Windows.Forms.Button();
             this.btn_signin = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.panellLogo = new System.Windows.Forms.Panel();
+            this.lbl_hi = new System.Windows.Forms.Label();
+            this.panellLogo.SuspendLayout();
             this.panelMenu.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panellLogo
+            // 
+            this.panellLogo.Controls.Add(this.lbl_hi);
+            this.panellLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panellLogo.Location = new System.Drawing.Point(220, 0);
+            this.panellLogo.Name = "panellLogo";
+            this.panellLogo.Size = new System.Drawing.Size(580, 450);
+            this.panellLogo.TabIndex = 7;
             // 
             // panelMenu
             // 
@@ -46,7 +57,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 450);
-            this.panelMenu.TabIndex = 0;
+            this.panelMenu.TabIndex = 6;
             // 
             // btn_signup
             // 
@@ -63,7 +74,6 @@
             this.btn_signup.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_signup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_signup.UseVisualStyleBackColor = true;
-            this.btn_signup.Click += new System.EventHandler(this.btn_signup_Click);
             // 
             // btn_signin
             // 
@@ -71,6 +81,7 @@
             this.btn_signin.FlatAppearance.BorderSize = 0;
             this.btn_signin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_signin.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btn_signin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_signin.Location = new System.Drawing.Point(0, 80);
             this.btn_signin.Name = "btn_signin";
             this.btn_signin.Size = new System.Drawing.Size(220, 60);
@@ -79,7 +90,6 @@
             this.btn_signin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_signin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_signin.UseVisualStyleBackColor = true;
-            this.btn_signin.Click += new System.EventHandler(this.btn_signin_Click);
             // 
             // panelLogo
             // 
@@ -90,24 +100,28 @@
             this.panelLogo.Size = new System.Drawing.Size(220, 80);
             this.panelLogo.TabIndex = 1;
             // 
-            // panellLogo
+            // lbl_hi
             // 
-            this.panellLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panellLogo.Location = new System.Drawing.Point(220, 0);
-            this.panellLogo.Name = "panellLogo";
-            this.panellLogo.Size = new System.Drawing.Size(580, 450);
-            this.panellLogo.TabIndex = 1;
+            this.lbl_hi.AutoSize = true;
+            this.lbl_hi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbl_hi.Location = new System.Drawing.Point(15, 31);
+            this.lbl_hi.Name = "lbl_hi";
+            this.lbl_hi.Size = new System.Drawing.Size(79, 29);
+            this.lbl_hi.TabIndex = 0;
+            this.lbl_hi.Text = "label1";
             // 
-            // Main
+            // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panellLogo);
             this.Controls.Add(this.panelMenu);
-            this.Name = "Main";
-            this.Text = "Главная";
-            this.Load += new System.EventHandler(this.Main_Load);
+            this.Name = "Account";
+            this.Text = "Account";
+            this.Load += new System.EventHandler(this.Account_Load);
+            this.panellLogo.ResumeLayout(false);
+            this.panellLogo.PerformLayout();
             this.panelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -115,11 +129,11 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel panellLogo;
         private System.Windows.Forms.Panel panelMenu;
+        private System.Windows.Forms.Button btn_signup;
         private System.Windows.Forms.Button btn_signin;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Button btn_signup;
-        private System.Windows.Forms.Panel panellLogo;
+        private System.Windows.Forms.Label lbl_hi;
     }
 }
-

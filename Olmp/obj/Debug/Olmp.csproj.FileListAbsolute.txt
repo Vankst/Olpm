@@ -45,3 +45,4 @@ D:\Olmp\Olmp\obj\Debug\Olmp.Main.resources
 D:\Olmp\Olmp\obj\Debug\Olmp.SignUp.resources
 D:\Olmp\Olmp\obj\Debug\Olmp.csproj.CopyComplete
 D:\Olmp\Olmp\obj\Debug\Olmp.Forms.SignIn.resources
+D:\Olmp\Olmp\obj\Debug\Olmp.Account.resources

@@ -23,16 +23,6 @@ namespace Olmp
 
         }
 
-        private void panellLogo_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelLogo_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void btn_signin_Click(object sender, EventArgs e)
         {
             SignIn signIn = new SignIn();
@@ -46,11 +36,6 @@ namespace Olmp
             SignUp signUp = new SignUp();
             signUp.Show();
             this.Hide();
-        }
-
-        private void panelMenu_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

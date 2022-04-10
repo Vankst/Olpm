@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Olmp.Forms
@@ -20,6 +14,8 @@ namespace Olmp.Forms
 
         private void btn_sign_Click(object sender, EventArgs e)
         {
+            lbl_error.Visible = false;
+            
             string password = "";
             string hash = "";
             if (tb_email.Text == String.Empty)
@@ -27,13 +23,13 @@ namespace Olmp.Forms
                 lbl_error.Visible = true;
                 lbl_error.Text = "Введите email";
             }
-            if (tb_password.Text == string.Empty)
+            else if (tb_password.Text == string.Empty)
             {
                 lbl_error.Visible = true;
                 lbl_error.Text = "Введите пароль";
 
             }
-            if (IsEmail(tb_email.Text) == false)
+            else if (!IsEmail(tb_email.Text))
             {
                 lbl_error.Visible = true;
                 lbl_error.Text = "Неверная почта";
@@ -44,9 +40,12 @@ namespace Olmp.Forms
                 DB dB = new DB();
                 dB.SignIn(tb_email.Text, out password) ;
             }
-            if(hash == password)
+            if(hash.ToLower() == password)
             {
-
+                Account account = new Account();
+                Account.email = tb_email.Text;
+                account.Show();
+                this.Hide();
             }
             else
             {
